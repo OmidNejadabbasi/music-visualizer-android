@@ -15,14 +15,12 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Example of a call to a native method
     }
 
     /**
      * A native method that is implemented by the 'musicvisualizer' native library,
      * which is packaged with this application.
      */
-    external fun stringFromJNI(): String
 
     companion object {
         // Used to load the 'musicvisualizer' library on application startup.
